@@ -80,6 +80,7 @@ a:hover{
 }
 
 .social-link-block{
+	overflow: hidden;
 	width: 70px;
 	height: 70px;
 	margin: 3px;
@@ -88,7 +89,7 @@ a:hover{
 
 #social img{
 	width: 70px;
-	height: 70px;
+	height: auto;
 }
 
 #social{
@@ -115,11 +116,6 @@ a:hover{
 	width: 230px;
 	background-color: white;
 	padding: 19px;
-}
-
-#social img:hover{
-	width: 75px;
-	height: 75px;
 }
 
 #connect header{
@@ -264,24 +260,13 @@ textarea{
 *
  */
 
-/* 
-#content{
-	display: flex;
-	flex-wrap: wrap;
-} */
-
-@media screen and (max-width: 640px) {
-	#name{
-		width: 100%;
-		padding: 30px 0px 30px 0px;
-	}
-
+ @media screen and (max-width: 980px) {
 	.menu{
 		width: 100%;
 	}
 
-	.menu-sell{
-		width: 33.333%;
+	#article{
+		width: 100%;
 	}
 
 	#avatar{
@@ -293,12 +278,19 @@ textarea{
 		margin-left: auto;
 		margin-right: auto;
 	}
+ }
 
-	#block-with-avatar{
+@media screen and (max-width: 640px) {
+	#name{
 		width: 100%;
+		padding: 30px 0px 30px 0px;
 	}
 
-	#article{
+	.menu-sell{
+		width: 33.333%;
+	}
+
+	#block-with-avatar{
 		width: 100%;
 	}
 
@@ -317,9 +309,65 @@ textarea{
 		margin-right: auto;
 		margin-left: auto;
 	}
-
+	
 }
 
-@media screen (min-width: 640px) and (max-width: 767px) {
-	
+@media screen and (min-width: 641px) and (max-width: 767px) {
+	#name{
+		padding: 30px 13px 30px 13px;
+		font-size: 25px;
+	}
+
+	#block-with-avatar{
+		width: 100%;
+	}
+
+	#about{
+		width: 89%;
+		margin: 0px 15px 0px 15px;
+	}
+
+	#connect{
+		width: 89%;
+		margin: 30px 0px 0px 15px;
+	}
+
+	#social div{
+		width: 50%;
+		margin-right: auto;
+		margin-left: auto;
+	}
+}
+
+@media screen and (min-width: 768px) and (max-width: 980px) {
+	#about{
+		width: 55%;
+	}
+
+	#name{
+		margin-left: 15px;
+	}
+
+	#connect{
+		width: 25%;
+	}
+
+	.social-link-block{
+		width: 55px;
+	}
+
+	#social img{
+		width: 55px;
+		height: auto;
+	}
+
+	#social div{
+		width: 100%;
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+	#about{
+		margin-left: 15px;
+	}
 }
