@@ -109,6 +109,7 @@ a:hover{
 	color: #4fa59f;
 	border-bottom: 3px solid #cccccc;
 	padding-bottom: 20px;
+	margin-bottom: 20px;
 }
 
 #connect{
@@ -217,7 +218,7 @@ textarea{
 	float: left;
 	margin-bottom: 40px;
 	width: 280px;
-	height: 200px;
+	height: auto;
 }
 
 .right-spacing{
@@ -227,29 +228,18 @@ textarea{
 .portfolio-tag{
 	color: white;
 	position: absolute;
-	top:150px;
-	width: 280px;
+	bottom: 20px;
+	width: 100%;
 	padding-top: 10px;
 	padding-bottom: 10px;
 	text-align: center;
 	background: #4fa59f;
 }
 
-#portfolio-car1{
-	background: url(../images/car1.jpg);
-	background-size: 100%;
-}#portfolio-car2{
-	background: url(../images/car2.jpg);
-	background-size: 100%;
-}#portfolio-car3{
-	background: url(../images/car3.jpg);
-	background-size: 100%;
-}#portfolio-car4{
-	background: url(../images/car4.jpg);
-	background-size: 100%;
-}#portfolio-car5{
-	background: url(../images/car5.jpg);
-	background-size: 100%;
+.portfolio-image{
+    display: inline-block;
+    width: 100%;
+    height: auto;
 }
 
 /* 
@@ -261,6 +251,10 @@ textarea{
  */
 
  @media screen and (max-width: 980px) {
+	.image-left{
+		width: 100%;
+	}
+
 	.menu{
 		width: 100%;
 	}
@@ -313,6 +307,10 @@ textarea{
 }
 
 @media screen and (min-width: 641px) and (max-width: 767px) {
+	.image-left{
+		width: 45%;
+	}
+
 	#name{
 		padding: 30px 13px 30px 13px;
 		font-size: 25px;
@@ -371,3 +369,4 @@ textarea{
 		margin-left: 15px;
 	}
 }
+
